@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find reproductive healthcare, abortion-related resources by state, and confidential hotlines."
+    />
+    <title>Care near you — Morgan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#5c7d74" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-inner" aria-label="Main">
+        <a class="logo" href="/">Morgan<span>.</span></a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/cycle">Your cycle</a></li>
+          <li><a href="/care" class="active">Care near you</a></li>
+          <li><a href="/advocate">Advocacy</a></li>
+          <li><a class="cta-small" href="#hotlines">Hotlines</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-title">
+      <h1>Reproductive healthcare in your jurisdiction</h1>
+      <p>
+        Laws, funding, and clinic hours change. Use official finders to confirm what is available where you are,
+        and keep these hotlines saved for moments when you need voice support fast.
+      </p>
+    </div>
+
+    <article class="content-narrow" style="max-width: var(--max)">
+      <div class="resource-block">
+        <h2>United States — pick your state or territory</h2>
+        <div class="select-wrap">
+          <label for="state-select">Primary location</label>
+          <select id="state-select" class="jurisdiction-select" aria-describedby="state-help">
+            <option value="">Select…</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>District of Columbia</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York</option>
+            <option>North Carolina</option>
+            <option>North Dakota</option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>
+            <option>Puerto Rico</option>
+            <option>U.S. Virgin Islands</option>
+            <option>Guam</option>
+            <option>Northern Mariana Islands</option>
+            <option>American Samoa</option>
+          </select>
+        </div>
+        <p id="state-help" style="margin-top: 1rem; color: var(--text-soft); font-size: 0.96rem">
+          After you choose a location, bookmark the finder links below—they pull up-to-date appointment and policy detail for your area. Morgan cannot store or predict legal status; always double-check current law and clinic capacity.
+        </p>
+        <p id="state-message" style="margin-top: 1rem; display: none; padding: 1rem; background: var(--accent-light); border-radius: 12px;">
+          Resources for <strong id="state-name"></strong>: use the national finders below for verified providers, wait times, and options that apply where you live.
+        </p>
+      </div>
+
+      <div class="resource-block">
+        <h2>Trusted finders — clinics &amp; abortion-related care (U.S.)</h2>
+        <a
+          class="link-card"
+          href="https://www.abortionfinder.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>AbortionFinder.org</strong>
+          <small>Search by ZIP and filter for pregnancy options, funded care, minors’ services, and more—National Abortion Federation partners.</small>
+        </a>
+        <a
+          class="link-card"
+          href="https://www.ineedana.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>I Need an A (ineedana.com)</strong>
+          <small>Practical guidance and state-level information for people seeking abortion care in the United States.</small>
+        </a>
+        <a
+          class="link-card"
+          href="https://www.plannedparenthood.org/health-center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Planned Parenthood health centers</strong>
+          <small>STI testing, contraception, well-person care, and pregnancy options referrals—filter by location.</small>
+        </a>
+        <a
+          class="link-card"
+          href="https://reprolegalhelpline.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Repro Legal Helpline</strong>
+          <small>Free, confidential legal information about self-managed abortion, criminalization risk, and related questions (U.S.).</small>
+        </a>
+      </div>
+
+      <div class="resource-block">
+        <h2>Outside the United States</h2>
+        <p style="margin-top: 0; color: var(--text-soft)">
+          Morgan’s state list targets U.S. jurisdictions. For other countries, start with your national health directory or established sexual-health nonprofits in your region.
+        </p>
+        <a
+          class="link-card"
+          href="https://www.plannedparenthood.org/global"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Planned Parenthood Global — regional partners</strong>
+          <small>Entry point for international connections and education (not a substitute for local emergency care).</small>
+        </a>
+        <a
+          class="link-card"
+          href="https://www.actioncanadashr.org/en/health-care-options/abortion-services"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Action Canada — abortion services (Canada)</strong>
+        </a>
+        <a
+          class="link-card"
+          href="https://www.nhs.uk/conditions/abortion/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>NHS — abortion (United Kingdom)</strong>
+        </a>
+      </div>
+
+      <div class="resource-block" id="hotlines">
+        <h2>Hotlines &amp; text lines</h2>
+        <p style="margin-top: 0; color: var(--text-soft)">
+          If you or someone else is in immediate danger, call your local emergency number (e.g. <strong>911</strong> in the U.S.).
+        </p>
+        <ul class="hotline-list">
+          <li>
+            <span class="hotline-name">National Domestic Violence Hotline</span>
+            <span class="hotline-num"><a href="tel:18007997233">1-800-799-7233</a></span>
+            <span style="color: var(--text-soft); font-size: 0.9rem">24/7 · <a href="https://www.thehotline.org/" target="_blank" rel="noopener">thehotline.org</a></span>
+          </li>
+          <li>
+            <span class="hotline-name">RAINN — sexual assault</span>
+            <span class="hotline-num"><a href="tel:18006564673">1-800-656-HOPE (4673)</a></span>
+            <span style="color: var(--text-soft); font-size: 0.9rem">24/7 · <a href="https://www.rainn.org/" target="_blank" rel="noopener">rainn.org</a></span>
+          </li>
+          <li>
+            <span class="hotline-name">988 Suicide &amp; Crisis Lifeline</span>
+            <span class="hotline-num"><a href="tel:988">988</a> (call or text)</span>
+            <span style="color: var(--text-soft); font-size: 0.9rem">U.S. · <a href="https://988lifeline.org/" target="_blank" rel="noopener">988lifeline.org</a></span>
+          </li>
+          <li>
+            <span class="hotline-name">Crisis Text Line</span>
+            <span class="hotline-num">Text <strong>HOME</strong> to <a href="sms:741741">741741</a></span>
+            <span style="color: var(--text-soft); font-size: 0.9rem">U.S. &amp; Canada · <a href="https://www.crisistextline.org/" target="_blank" rel="noopener">crisistextline.org</a></span>
+          </li>
+          <li>
+            <span class="hotline-name">National Maternal Mental Health Hotline</span>
+            <span class="hotline-num"><a href="tel:18338524263">1-833-TLC-MAMA (852-6262)</a></span>
+            <span style="color: var(--text-soft); font-size: 0.9rem">24/7 · English &amp; Spanish · U.S.</span>
+          </li>
+          <li>
+            <span class="hotline-name">Postpartum Support International</span>
+            <span class="hotline-num"><a href="tel:18009444773">1-800-944-4773</a> (call or text “Help”)</span>
+            <span style="color: var(--text-soft); font-size: 0.9rem">perinatal mental health · <a href="https://www.postpartum.net/" target="_blank" rel="noopener">postpartum.net</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="disclaimer-box" style="margin-top: 2rem">
+        Phone numbers and websites were accurate to common public listings when this page was built; carriers and organizations may change them. If a link fails, search the organization’s name directly.
+      </p>
+    </article>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-note">Morgan does not operate hotlines and is not affiliated with the organizations listed.</p>
+        <div class="footer-links">
+          <a href="/cycle">Cycle tools</a>
+          <a href="/advocate">Advocacy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script>
+      (function () {
+        const sel = document.getElementById("state-select");
+        const msg = document.getElementById("state-message");
+        const nameEl = document.getElementById("state-name");
+        if (!sel || !msg || !nameEl) return;
+        sel.addEventListener("change", function () {
+          if (!this.value) {
+            msg.style.display = "none";
+            return;
+          }
+          nameEl.textContent = this.value;
+          msg.style.display = "block";
+        });
+      })();
+    </script>
+  </body>
+</html>

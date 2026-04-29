@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Understand menstrual phases with or without birth control — ovulation, pregnancy awareness, whole-cycle context."
+    />
+    <title>Your cycle — Morgan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#5c7d74" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-inner" aria-label="Main">
+        <a class="logo" href="/">Morgan<span>.</span></a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/cycle" class="active">Your cycle</a></li>
+          <li><a href="/care">Care near you</a></li>
+          <li><a href="/advocate">Advocacy</a></li>
+          <li><a class="cta-small" href="/care">Get support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-title">
+      <h1>Your cycle, start to finish</h1>
+      <p>
+        Hormonal birth control, copper IUDs, breastfeeding, PCOS, and stress can all change bleeding,
+        cramps, cervical mucus, and whether you ovulate. Use Morgan as orientation—your clinician has the clinical detail.
+      </p>
+    </div>
+
+    <article class="content-narrow">
+      <h2>Natural menstrual cycle (no hormonal suppression)</h2>
+      <p>
+        In a textbook 28-day cycle, <strong>ovulation</strong> often lands around mid-cycle—but “normal”
+        cycle length spans roughly 21–35 days, and ovulation doesn’t arrive on clockwork for everyone.
+        The “fertile window” usually includes the few days before and the day of ovulation; sperm can survive for several days in the body.
+      </p>
+      <p>
+        If you’re tracking for <strong>pregnancy prevention</strong> without hormones, fertile-window
+        methods (symptothermal charting, monitors, clinician-taught FABM) outperform calendar guessing.
+        Apps that only count days estimate risk poorly compared to basal body temps, LH tests, cervical mucus, or clinician guidance.
+      </p>
+      <p>
+        If you’re <strong>trying to conceive</strong>, timing intercourse or insemination around ovulation raises odds; fertility evaluation is recommended after 12 months under 35 (six months at 35+), or sooner if periods are irregular or you have other concerns.
+      </p>
+
+      <h2>Hormonal birth control &amp; typical patterns</h2>
+      <p>
+        Combined oral contraceptives, the patch, many vaginal rings, and other regimens deliberately
+        stabilize hormones to block ovulation reliably when taken as directed. Withdrawal bleeding on placebo week can look like a period without being identical to menstruation physiologically—wording differs by formulation.
+      </p>
+      <p>
+        <strong>Progestin-only</strong> methods (many pills, hormonal IUDs, injections, implants) may or may not halt ovulation; they thicken cervical mucus and thin the uterine lining, which still lowers pregnancy risk in different ways depending on dose and placement.
+      </p>
+
+      <div class="cycle-panel" aria-labelledby="explorer-title">
+        <h3 id="explorer-title">Cycle explorer — move through “day” of month</h3>
+        <p style="margin-top: 0; font-size: 0.95rem; color: var(--text-soft)">
+          Toggle hormonal contraception mode to swap the teaching labels—not to replace prescribing information or dosing instructions from your clinician.
+        </p>
+        <div class="controls-row">
+          <div class="toggle-group">
+            <input type="checkbox" id="on-bc" />
+            <label for="on-bc">Illustrative “on combined hormonal contraception” labels</label>
+          </div>
+        </div>
+        <label for="cycle-day"><strong>Day of a 28-day window:</strong> <span id="day-display">14</span></label>
+        <input type="range" id="cycle-day" min="1" max="28" value="14" />
+        <div class="cycle-svg-container">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id="cycle-svg" role="img" aria-label="Cycle wheel">
+            <g id="cycle-ring"></g>
+          </svg>
+        </div>
+        <p class="phase-label" id="phase-title">Follicular phase</p>
+        <p class="phase-desc" id="phase-desc"></p>
+        <div class="pill-tags" id="pills"></div>
+      </div>
+
+      <div class="disclaimer-box">
+        This page cannot diagnose pregnancy, infertility, hormonal disorders, or contraceptive efficacy.
+        If you forgot pills or had unprotected sex, clinicians and pharmacists may discuss emergency contraception on a timeline that matters measured in hours to days—not months.
+      </div>
+      <p>
+        Looking for clinicians or legal resources? Go to <a href="/care">Care near you</a>.
+      </p>
+    </article>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-note">Educational overview only—not a substitute for licensed medical care.</p>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/care">Care resources</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/cycle.js"></script>
+  </body>
+</html>
